@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap" rel="stylesheet">
+
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div
+      class="container main-area d-flex align-items-center justify-content-center p-4 gap-2 mx-5 position-relative"
+    >
+    <div class="flex-column align-items-center justify-content-center position-absolute loader-area">
+      <div class="loader"></div>
+      <span class="animate__animated animate__bounceInRight ">Please Wait</span>
+      <span class="animate__animated animate__bounceInRight animate__delay-1s">Entering the System</span>
+    </div>
+    
+      <div class="left-area d-flex flex-column align-items-center position-relative ">
+        <div class="d-flex flex-column align-items-center gap-3 ">
+          <img src="as.png" width="100" alt="" />
+          <span class="signup mt-4" >SIGN UP</span>
+          <h1 class="text-white m-0 ">Welcome!</h1>
+          <p class="gray-text text-center m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            debitis!
+          </p>
+        </div>
+        <form action="" class="d-flex flex-column w-100 gap-3 pt-4">
+          <input type="text" placeholder="Username"  />
+          <input type="password" placeholder="Password"  />
+        </form>
+        <div class="d-flex gap-2 align-items-center justify-content-center w-100 pt-3">
+          <div class="socials">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-apple"></i>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-discord"></i>
+          </div>
+
+          
+        </div>
+        <div class="w-100 pt-3">
+          <span class="or">OR</span>
+        </div>
+        <div class="d-flex flex-column gap-3 w-100 pt-3">
+          <div class="otherlogin">
+            <img width="32" height="32" src="https://img.icons8.com/clouds/100/linkedin.png" alt="linkedin"/>
+            Login with Linkedin
+          </div>
+          <div class="otherlogin">
+            <img width="32" height="32" src="https://img.icons8.com/clouds/100/github.png" alt="github"/>
+            Login with Github
+          </div>
+        </div>
+        <div class="position-absolute bottom-0 w-100 d-flex justify-content-between bottom-part">
+          <a href="">Privacy Policy</a> 
+          <a href="">Terms & Conditions</a>
+        </div>
+      </div>
+      <div class=" right-area"></div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const btn = document.querySelector(".signup");
+      const loaderArea = document.querySelector(".loader-area");
+
+      const leftArea = document.querySelector(".left-area");
+      const rightArea = document.querySelector(".right-area");
+
+      btn.addEventListener("click", () => {
+        loaderArea.style.display = "flex";
+        loaderArea.style.opacity = "1";
+        leftArea.classList.add("remove");
+        rightArea.style.backgroundPosition = "Bottom";
+        rightArea.style.opacity = ".6";
+      });
+
+
+    </script>
+  </body>
+</html>
+
+
+
+
